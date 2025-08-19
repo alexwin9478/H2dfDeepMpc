@@ -3,7 +3,7 @@
 [![DOI](https://zenodo.org/badge/1036037973.svg)](https://doi.org/10.5281/zenodo.16902939)
 
 This repository contains MATLAB® and Simulink® code for generating a **Nonlinear Model Predictive Controller (NMPC)** based on a trained **GRU (Gated Recurrent Unit) Deep Neural Network** model.  
-The DNN training scripts are available in a separate repository: [Link].  
+The DNN training scripts are available in a separate repository: [Zenodo Publication](https://doi.org/10.5281/zenodo.16902579).  
 
 Authors:  
 - **Alexander Winkler** (alexander.winkler@rwth-aachen.de)  
