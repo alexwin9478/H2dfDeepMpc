@@ -1,6 +1,6 @@
 # GRU-based Nonlinear Model Predictive Control (NMPC) for H2-Diesel Dual-Fuel Engines
 
-[![DOI](https://zenodo.org/badge/1036036262.svg)](https://doi.org/10.5281/zenodo.16902579)
+[![DOI](https://zenodo.org/badge/1036036262.svg)](https://doi.org/10.5281/zenodo.16902939)
 
 This repository contains MATLAB® and Simulink® code for generating a **Nonlinear Model Predictive Controller (NMPC)** based on a trained **GRU (Gated Recurrent Unit) Deep Neural Network** model.  
 The DNN training scripts are available in a separate repository: [Link].  
