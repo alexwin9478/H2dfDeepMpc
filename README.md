@@ -60,7 +60,7 @@ If you are using this code, please cite the following publications:
 - [Dummy1] Paper 1, tbd  
 - [Dummy2] Paper 2, tbd 
 - The data publication on **Zenodo**:
-[![DOI](https://zenodo.org/badge/1036036262.svg)](https://doi.org/10.5281/zenodo.16902579)
+[![DOI](https://zenodo.org/badge/1036037973.svg)](https://doi.org/10.5281/zenodo.16902939)
 
 
 ---
