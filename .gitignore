@@ -1,0 +1,54 @@
+*.autosave
+*.asv
+
+acados_implementation/utilities/env_sh_call.m
+acados_implementation/utilities/Measurement_Data.
+acados_implementation/utilities/H2DF
+acados_implementation/utilities/Scripts/20230824-fig
+temp/
+slprj/
+c_generated_code/
+
+*.tex
+*.json
+*.log
+*.cmake
+
+
+# Created by https://www.toptal.com/developers/gitignore/api/matlab
+# Edit at https://www.toptal.com/developers/gitignore?templates=matlab
+
+### MATLAB ###
+# Windows default autosave extension
+*.asv
+
+# OSX / *nix default autosave extension
+*.m~
+
+# Compiled MEX binaries (all platforms)
+*.mex*
+
+# Packaged app and toolbox files
+*.mlappinstall
+*.mltbx
+
+# Generated helpsearch folders
+helpsearch*/
+
+# Simulink code generation folders
+slprj/
+sccprj/
+
+# Matlab code generation folders
+codegen/
+
+# Simulink autosave extension
+*.autosave
+
+# Simulink cache files
+*.slxc
+
+# Octave session info
+octave-workspace
+
+# End of https://www.toptal.com/developers/gitignore/api/matlab
