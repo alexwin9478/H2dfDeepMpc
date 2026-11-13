@@ -60,11 +60,13 @@ C2C_NMPC.Opts.tol = 1e-4;
 % set weights and bounds:
 % outputs: {'imep', 'nox', 'soot', 'mprr'}
 alpha = 1;
-C2C_NMPC.Weights.outputs = [3, 0.001, 0.001, 0.1] * alpha;  %C2C_NMPC.Weights.outputs = [0.75, 0.01, 0.001, 0.1] * alpha; 
+% v1.1: values of the Core controller in the paper (Table A.3). On the test bench the
+% weights and limits were set at run time through the Simulink block inputs; see README.
+C2C_NMPC.Weights.outputs = [1, 0.001, 0.001, 0.1] * alpha;  % v1.0: [3, 0.001, 0.001, 0.1]
 C2C_NMPC.Bounds.outputs = [-1e6, -1e6, -1e6, -1e6; ...
     10e5, 1800, 1.5, 15e5].'; % new data 2024 Alex
-C2C_NMPC.Bounds.outputs_soft = [0, 0, 0, 0; ... % [0, 0, 0, 0; ...
-    9.5e5, 1200, 0.8, 12e5].'; % new data 2024 Alex
+C2C_NMPC.Bounds.outputs_soft = [0, 0, 0, 0; ... % soft limits of the paper (Table A.2)
+    9e5, 1200, 1.5, 15e5].'; % v1.0: 9.5e5, 1200, 0.8, 12e5
 
 % controls: {'doi_main', 'p2m', 'soi_main', 'doi_h2'}
 beta = 0.001; %beta = 0.005

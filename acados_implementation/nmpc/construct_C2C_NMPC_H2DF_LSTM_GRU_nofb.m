@@ -56,14 +56,14 @@ ocp_model.set('constr_lbx_e', [C2C_NMPC.Bounds.controls_norm(:, 1); C2C_NMPC.Bou
 ocp_model.set('constr_ubx_e', [C2C_NMPC.Bounds.controls_norm(:, 2); C2C_NMPC.Bounds.outputs_norm(:, 2)]);
 
 
-% set slack variables:
+% set slack variables (v1.1: 10, as used in the experiments; v1.0: 1):
 % {'doi_main', 'soi_pre', 'soi_main', 'doi_h2', 'imep', 'nox, 'soot', 'mprr', 'delta_doi_main  ', 'delta_soi_pre', 'delta_soi_main', 'delta_doi_h2'}
 ocp_model.set('constr_expr_h', [last_controls; last_outputs; delta_controls]);
 ocp_model.set('constr_expr_h_e', [last_controls; last_outputs]);
 
-slack_variable_weights.controls = [1, 1, 1, 1] * 1; % already constrainted with X, no soft bounds neede / wanted
-slack_variable_weights.outputs = [1, 1, 1, 1] * 1;
-slack_variable_weights.delta_controls = [1, 1, 1, 1] * 1; % already constrainted with u, no soft bounds neede / wanted
+slack_variable_weights.controls = [1, 1, 1, 1] * 10; % already constrainted with X, no soft bounds neede / wanted
+slack_variable_weights.outputs = [1, 1, 1, 1] * 10;
+slack_variable_weights.delta_controls = [1, 1, 1, 1] * 10; % already constrainted with u, no soft bounds neede / wanted
 Z = blkdiag(diag(slack_variable_weights.controls), diag(slack_variable_weights.outputs), diag(slack_variable_weights.delta_controls));
 Z_e = blkdiag(diag(slack_variable_weights.controls), diag(slack_variable_weights.outputs));
 z = [slack_variable_weights.controls.'; slack_variable_weights.outputs.'; slack_variable_weights.delta_controls.'];
