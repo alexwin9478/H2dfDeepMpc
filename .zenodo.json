@@ -1,0 +1,16 @@
+{
+  "title": "Deep MPC Scripts using acados incl. Closed-Loop Simulation Model",
+  "upload_type": "software",
+  "description": "<p>This repository contains MATLAB&reg; and Simulink&reg; code for generating a <strong>Nonlinear Model Predictive Controller (NMPC)</strong> based on a trained <strong>GRU (Gated Recurrent Unit) Deep Neural Network</strong> model as learned dynamics. Integrated into the acados open-source framework. Including closed-loop Simulink simulation and embedded integration (Raspberry Pi) model.</p><p>Version 1.1 sets the default weights and soft limits to the Core controller settings reported in the associated paper and documents in the ReadMe that the weights and limits were set at run time on the test bench.</p><p>Please see the ReadMe in the GitHub repository for more information.</p>",
+  "creators": [
+    {"name": "Winkler, Alexander", "affiliation": "RWTH Aachen University", "orcid": "0000-0001-9536-7873"}
+  ],
+  "contributors": [
+    {"name": "Gordon, David", "affiliation": "University of Alberta", "type": "ProjectMember", "orcid": "0000-0002-7999-8234"},
+    {"name": "Andert, Jakob", "affiliation": "RWTH Aachen University", "type": "Supervisor", "orcid": "0000-0002-6754-1907"},
+    {"name": "Sharma, Vasu", "type": "ProjectMember", "orcid": "0009-0006-4348-7412"}
+  ],
+  "keywords": ["Model Predictive Control", "Deep Neural Network"],
+  "license": "Apache-2.0",
+  "language": "eng"
+}
